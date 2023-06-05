@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+// Fonts
+$header_font: 'Calistoga display', serif;
+$body_font: 'Lato', sans-serif;
+
+// Media Queries sizes
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// Colors
+$black: #000000;
+$yellow: #FF6646;
+$red: rgb(191, 23, 23);
+$blue: #233442;
+$green: #1fc543;
+$faded_green: #546675;
+$white: #FFFFFF;
+$dirty_white: #F5F4F0;
+$gray: #e1e1e1;
+$light_gray: #F5F5F5;
+$mid_gray: #EDEDED;
+$dark_gray: #333333;
+
+$separation: 5rem;
+
+// Fonts
+$thin: 300;
+$regular : 400;
+$bold: 700;
+$black-w: 900

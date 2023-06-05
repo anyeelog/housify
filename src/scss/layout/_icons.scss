@@ -1,0 +1,44 @@
+@include tablet {
+  .about-icons {
+    @include grid(3, 2rem);
+    margin-top: calc($separation * 1.5);
+    margin-bottom: calc($separation * 1.5);
+  }
+}
+
+.icon {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 2rem;
+
+  img {
+    height: 5rem;
+    width: auto;
+    margin: auto;
+  }
+  h3 {
+    color: $yellow;
+  }
+  p {
+    line-height: 3rem;
+  }
+
+  a {
+    font-weight: $bold;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    width: 20rem;
+  }
+
+  .btn-b-yw {
+    border: 1.5px solid $yellow;
+    color: $yellow;
+    margin-top: 2.5rem;
+    display: inline-block;
+
+    &:hover {
+      background-color: $yellow;
+      color: $white;
+    }
+  }
+}

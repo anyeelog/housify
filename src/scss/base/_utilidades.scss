@@ -1,0 +1,14 @@
+.section {
+    margin-top: $separation;
+    margin-bottom: $separation;
+}
+.container-centered {
+    max-width: 80rem;
+}
+.align-center {
+  display: flex;
+  justify-content: center;
+}
+.w-100 {
+  width: 100%;
+}

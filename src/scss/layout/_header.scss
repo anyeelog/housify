@@ -1,0 +1,57 @@
+.no-webp .header-index {
+  // background-image: url("../img/header.jpg");
+  background-image: url("../img/header2.jpg");
+}
+.webp .header-index {
+  // background-image: url("../img/header.webp");
+  background-image: url("../img/header2.webp");
+}
+
+
+.header {
+  // background-color: $white;
+  border-bottom: 1px solid $gray;
+
+  &.header-index {
+    background-position: center center;
+    background-size: cover;
+    border: none;
+
+    @include tablet {
+      min-height: 70rem;
+    }
+
+    .container-header {
+      @include tablet {
+        min-height: 70rem;
+      }
+    }
+  }
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    color: $yellow;
+  }
+
+  h1 {
+    text-align: center;
+    color: $white;
+    font-weight: $bold;
+    line-height: 6rem;
+  }
+}
+
+.header-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13rem;
+
+  .header-btn {
+    max-width: 20rem;
+  }
+}

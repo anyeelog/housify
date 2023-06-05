@@ -1,0 +1,91 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding-top: 3rem;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h1 { color: $blue; }
+}
+
+.bar-index h1 {
+  color: $white;
+}
+
+.navigation {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: visibility .3s ease-in-out, opacity .5s linear, height .5s linear;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  a {
+    color: $blue;
+    text-decoration: none;
+    font-weight: $bold;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+
+    @include tablet {
+      margin-right: 2rem;
+
+      &last-of-type {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+.navigation-index {
+  a {
+    color: $white;
+  }
+}
+
+
+/* Burger menu */
+
+.mobile-menu {
+  @include tablet {
+    display: none;
+  }
+
+  img {
+    width: 5rem;
+  }
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+.dark-mode-btn {
+  width: 2.5rem;
+  margin: 1rem auto;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.dark-mode-btn-index { filter: invert(100%); }

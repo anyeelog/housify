@@ -1,0 +1,14 @@
+.container-about {
+  @include tablet {
+    @include grid(2, 4rem);
+  }
+
+
+}
+
+.about-text blockquote {
+  font-weight: $black-w;
+  font-size: 2.2rem;
+  margin: 0;
+  padding-left: 1rem 0 3rem 0;
+}

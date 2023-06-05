@@ -1,0 +1,25 @@
+.footer {
+  padding: calc($separation / 2) 0;
+  background-color: $mid_gray;
+  margin-bottom: 0;
+
+  .container-footer {
+    padding-top: calc($separation / 2);
+  }
+
+  .navigation {
+    justify-content: center;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+
+    a {
+      color: $blue;
+    }
+  }
+
+  .copyright {
+    color: $blue;
+    text-align: center;
+  }
+}
