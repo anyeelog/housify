@@ -21,7 +21,6 @@ class Router {
 
     if($fn) {
       // url exists and there's an associated function
-      debug($this);
       call_user_func($fn, $this);
     } else {
       echo "Page not found";
@@ -30,8 +29,18 @@ class Router {
   }
 
   // View
-  public function render($view) {
-    include __DIR__ . "/views/$view.php";
+  public function render($view, $datas = []) {
+
+    foreach($datas as $key => $value) {
+      $$key = $value;
+    }
+
+    ob_start(); // Stores in the memory for a moment
+
+    include_once __DIR__ . "/views/$view.php";
+    $content = ob_get_clean(); // Cleans the Buffer
+    include_once __DIR__ . "/views/layout.php";
+
   }
 
 }

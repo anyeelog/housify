@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'angiexu/housify',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => 'ede198755b41e68a45aed73ab7d6b0c1f121d75c',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'b83967b9c9f4cf3af57e97231660f7c964ce1a2c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'angiexu/housify' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'ede198755b41e68a45aed73ab7d6b0c1f121d75c',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b83967b9c9f4cf3af57e97231660f7c964ce1a2c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

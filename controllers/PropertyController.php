@@ -6,7 +6,9 @@ use MVC\Router;
 class PropertyController {
 
   public static function index(Router $router) {
-    $router->render('properties/admin');
+    $router->render('properties/admin', [
+
+    ]);
   }
 
   public static function create() {

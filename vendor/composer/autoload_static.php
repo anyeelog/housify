@@ -30,7 +30,7 @@ class ComposerStaticInit50971e53c25771cb156b61a5fd7a8406
         ),
         'C' => 
         array (
-            'Contrtollers\\' => 13,
+            'Controllers\\' => 12,
         ),
     );
 
@@ -56,7 +56,7 @@ class ComposerStaticInit50971e53c25771cb156b61a5fd7a8406
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'Contrtollers\\' => 
+        'Controllers\\' => 
         array (
             0 => __DIR__ . '/../..' . '/controllers',
         ),
