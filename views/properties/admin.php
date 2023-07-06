@@ -14,8 +14,8 @@
 
 
 
-    <a href="/properties/create.php" class="button btn-yw">New property</a>
-    <a href="/sellers/create.php" class="button btn-blue">New seller</a>
+    <a href="/properties/create" class="button btn-yw">New property</a>
+    <a href="/sellers/create" class="button btn-blue">New seller</a>
 
     <table class="properties">
       <thead>
@@ -38,9 +38,9 @@
             </th>
             <th>$<?php echo $property->price; ?></th>
             <th>
-              <a href="admin/properties/update.php?id=<?php echo $property->id; ?>" class="btn-blue-block">Update</a>
+              <a href="/properties/update?id=<?php echo $property->id; ?>" class="btn-blue-block">Update</a>
 
-              <form method="POST" class="w-100">
+              <form method="POST" class="w-100" action="/properties/delete">
                 <input type="hidden" name="id" value="<?php echo $property->id; ?>">
                 <input type="hidden" name="type" value="property">
                 <input type="submit" value="Delete" class="btn-red-block w-100">

@@ -1,5 +1,7 @@
 <main class="container">
-    <h1>Create property</h1>
+    <h1>Update property</h1>
+
+    <a href="/admin" class="btn-blue" style="margin-bottom: 2rem;">Return</a>
 
     <?php foreach($errors as $error) { ?>
       <div class="alert error">
@@ -7,10 +9,8 @@
       </div>
     <?php } ?>
 
-    <a href="/admin" class="btn-blue" style="margin-bottom: 2rem;">Return</a>
-
     <form class="form" method="POST" enctype="multipart/form-data">
       <?php include __DIR__ . '/form.php'; ?>
-      <input type="submit" value="Create property" class="btn-blue">
+      <input type="submit" value="Update property" class="btn-blue">
     </form>
 </main>

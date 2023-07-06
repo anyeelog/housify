@@ -11,12 +11,18 @@ class Router {
     $this->routesGET[$url] = $fn;
   }
 
+  public function post($url, $fn) {
+    $this->routesPOST[$url] = $fn;
+  }
+
   public function testRoutes() {
     $actualUrl = $_SERVER['PATH_INFO'] ?? '/';
     $method = $_SERVER['REQUEST_METHOD'];
 
     if($method === 'GET') {
       $fn = $this->routesGET[$actualUrl] ?? null;
+    } else {
+      $fn = $this->routesPOST[$actualUrl] ?? null;
     }
 
     if($fn) {
