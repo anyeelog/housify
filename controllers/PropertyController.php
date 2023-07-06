@@ -11,12 +11,14 @@ class PropertyController {
   public static function index(Router $router) {
 
     $properties = Property::all();
+    $sellers = Seller::all();
 
     $result = $_GET['result'] ?? null;
 
-    $router->render('properties/admin', [
+    $router->render('admin', [
       'properties' => $properties,
-      'result' => $result
+      'result' => $result,
+      'sellers' => $sellers
     ]);
   }
 
