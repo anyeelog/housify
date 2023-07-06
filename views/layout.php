@@ -34,10 +34,10 @@
         </div>
 
         <nav class="navigation <?php echo $intro ? 'navigation-index' : ''; ?>">
-          <a href="about.php">About us</a>
-          <a href="properties.php">Properties</a>
-          <a href="blog.php">Blog</a>
-          <a href="contact.php">Contact</a>
+          <a href="about">About us</a>
+          <a href="properties">Properties</a>
+          <a href="blog">Blog</a>
+          <a href="contact">Contact</a>
           <?php if($auth) { ?>
             <a href="logout.php">Logout</a>
           <?php } ?>
