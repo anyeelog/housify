@@ -39,7 +39,7 @@
           <a href="blog">Blog</a>
           <a href="contact">Contact</a>
           <?php if($auth) { ?>
-            <a href="logout.php">Logout</a>
+            <a href="/logout">Logout</a>
           <?php } ?>
           <!--
             Dark mode button

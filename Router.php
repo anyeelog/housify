@@ -16,6 +16,11 @@ class Router {
   }
 
   public function testRoutes() {
+
+    session_start();
+    $auth = $_SESSION['login'] ?? null;
+    $protected_routes = ['/admin', '/properties/create', '/properties/update', '/properties/delete', '/sellers/create', '/sellers/update', '/sellers/delete'];
+
     $actualUrl = $_SERVER['PATH_INFO'] ?? '/';
     $method = $_SERVER['REQUEST_METHOD'];
 
@@ -24,6 +29,12 @@ class Router {
     } else {
       $fn = $this->routesPOST[$actualUrl] ?? null;
     }
+
+    // Protect routes
+    if(in_array($actualUrl, $protected_routes) && !$auth) {
+      header('Location: /');
+    }
+
 
     if($fn) {
       // url exists and there's an associated function
