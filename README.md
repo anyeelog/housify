@@ -1,18 +1,21 @@
 # Housify MVC
 
 ## Description
-Housify is a web page project that allows people to buy and sell properties and houses. Users can browse through listings.
-Only the admin of the page can publish/update/delete properties or houses.
+Housify is a web page project of a real estate company that facilitates the buying, selling, renting and managing of properties. Housify connects buyers and sellers, offers property development and management services, and provides expertise in local real estate markets.
+
+The website allows users to browse through a listing of properties which are being sold. Users can get information about the property they like and reach out to the company.
+
+Only the admin of the page (the company) can publish/update/delete properties or houses.
 
 
 ## Technologies
 
-- Frontend: HTML, SCSS, Javascript
-- Backend: PHP, Composer, MySQL
-- Others: Gulp
+- <strong>Frontend:</strong> HTML, SCSS, Javascript
+- <strong>Backend:</strong> PHP, Composer, MySQL
+- <strong>Others:</strong> Gulp
 
 
-More information
+<strong>More information</strong>
 
 - The CRUD functionality allows for easy management and interaction with the property listings
 - The MVC architecture ensures a structured and organized user experience
