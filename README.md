@@ -7,11 +7,37 @@ Only the admin of the page can publish/update/delete properties or houses.
 
 ## Technologies
 
-Built using PHP language, CRUD/MVC principles and MySQL as database.
+- Frontend: HTML, SCSS, Javascript
+- Backend: PHP, Composer, MySQL
+- Others: Gulp
 
-- The CRUD functionality allows for easy management and interaction with the property listings, while the MVC architecture ensures a structured and organized user experience.
-- Has forms to create or update properties or sellers which comes with validations and uses GET/POST methods to retrieve or submit data.
-- It's a responsive website, means can it be used on desktop, tablet or phone.
+
+More information
+
+- The CRUD functionality allows for easy management and interaction with the property listings
+- The MVC architecture ensures a structured and organized user experience
+- Has forms to create or update properties or sellers which comes with validations
+- Uses GET/POST methods to retrieve or submit data
+- Responsive website
 
 
 ## Images
+
+<table>
+  <tr>
+    <td valign="top" width="33.33%">
+      <h3>Home</h3>
+      <img src="https://github.com/anyeelog/housify_MVC/assets/62017211/920cbf56-4431-4976-b30f-c16359f5a3da">
+    </td>
+    <td valign="top" width="33.33%">
+      <h3>Properties</h3>
+      <img src="https://github.com/anyeelog/housify_MVC/assets/62017211/1da32cb6-0352-43d9-a005-80e81e443b76">
+      <img src="https://github.com/anyeelog/housify_MVC/assets/62017211/bef1b787-3f06-4f93-a511-b044e3367bd5">
+    </td>
+    <td valign="top" width="33.33%">
+      <h3>Blog</h3>
+      <img src="https://github.com/anyeelog/housify_MVC/assets/62017211/65a92876-c132-4912-bedb-e219047727a3">
+      <img src="https://github.com/anyeelog/housify_MVC/assets/62017211/e24a2b36-d7b4-42a1-abef-ffdf242f49bb">
+    </td>
+  </tr>
+</table>
