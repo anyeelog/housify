@@ -1,4 +1,4 @@
-# Housify MVC
+# Housify
 
 Housify is a web page project of a real estate company that facilitates the buying, selling, renting and managing of properties. Housify connects buyers and sellers, offers property development and management services, and provides expertise in local real estate markets.
 
